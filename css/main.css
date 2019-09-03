@@ -1,0 +1,380 @@
+/*Imported fonts*/
+@font-face {
+    font-family: Geotica;
+    src: url('../fonts/Geotica_Three.otf') format('opentype');
+}
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+}
+
+body{
+    font-size: 100%;
+}
+
+/*Frontpage CSS*/
+/*Header CSS*/
+header {
+    width: 100%;
+    height: 700px;
+    background-image: url('../img/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header nav .navbar-brand img{
+    max-width: 150px;
+}
+header nav .navbar-collapse .nav-item a img{
+    width: 23px;
+}
+header .nav-item a{
+    font-size: 110%;
+    font-family: Roboto;
+}
+nav .nav-link {
+    color: white !important;
+}
+.banner-text-wrapper h1{
+    margin-top: 140px;
+    color: white;
+    font-family: Geotica;
+}
+.banner-text-wrapper p{
+    padding: 20px;
+    overflow: hidden;
+}
+.banner-text-wrapper .reservation-button{
+    color: white;
+    font-family: Roboto;
+    font-size: 120%;
+    border: 3px solid white;
+    text-decoration: none;
+    padding: 8px;
+    margin-left: -3000px;
+}
+/* Banner Media Query CSS*/
+@media only screen and (max-width: 768px) {
+    .navbar-collapse{
+        position: absolute;
+        top: 170px;
+        width: 100%;
+        margin-left: -16px;
+        padding-left: 5px;
+        background-color: rgba(102,102,102,0.7)
+    }
+}
+
+/*Welcome Section CSS*/
+.welcome-section{
+    background-image: url('../img/pattern.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.welcome-section h3{
+    padding: 45px 0;
+    font-family: Geotica;
+    font-size: 2.5em;
+}
+.welcome-section p{
+    width: 60%;
+    margin: auto;
+    font-size: 1.4em;
+    font-family: Roboto;
+    padding-bottom: 40px;
+}
+
+/*About us Section CSS*/
+.about{
+    width: 100%;
+    height: 600px;
+    background-image: url('../img/bar.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.about .info-text{
+    position: absolute;
+    z-index: 20;
+}
+.about h3{
+    font-family: Geotiac;
+    color: white;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.about h4{
+    font-family: Roboto;
+    color: white;
+    margin-top: 30px;
+}
+.about ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.about ul li{
+    color: white;
+    font-family: Roboto;
+}
+.about ul li img{
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+.about .button-wrap a img{
+    width: 105px;
+    margin-top: 15px;
+}
+.glass{
+    margin-top: 90px;
+    margin-left: -2000px;
+}
+.glass-show{
+    margin-left: 0;
+    transition: 1s margin-left ease-out;
+}
+@media only screen and (max-width: 576px){
+    .glass{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1300px) { 
+    .about{
+        background-position: 25% 75%;
+    }
+}
+
+/*Daily Menu Section CSS*/
+.daily-menu{
+    width: 100%;
+    background:  url('../img/menu.png') center/cover;
+}
+.daily-menu h2, .daily-menu h4{
+    font-family: Geotica;
+    margin: 30px 0 15px;
+}
+.daily-menu ul{
+    list-style: none;
+    column-count: 2;
+    margin-bottom: 40px;
+}
+.daily-menu ul li{
+    font-family: Roboto;
+    font-size: 1.2em;
+}
+.daily-menu ul li span{
+    color: #997a4b
+}
+
+/*Events Section CSS*/
+.events{
+    width: 100%;
+    background: url('../img/event-bg.jpg') center/cover;
+}
+.events h1{
+    font-family: Geotica;
+    padding: 40px 0;
+    color: white;
+}
+.events .event-img{
+    width: 100%;
+}
+.events h4{
+    background-color: #e38312;
+    padding: 10px 0;
+    font-weight: bold;
+    font-family: Roboto;
+    color: white;
+    border-bottom-left-radius: 8px;
+    margin-bottom: 0;
+}
+.events .info-text{
+    background-color: white;
+    
+    border-bottom-right-radius: 8px;
+}
+.events .info-text h2{
+    font-family: Geotica;
+    padding: 10px 0;
+}
+.events .info-text p{
+    font-family: Roboto;
+    padding: 0 20px;
+}
+.events .info-text .link a{
+    color: black;
+    text-decoration: none;
+}
+.events .info-text .link a img{
+    max-width: 15px;
+    margin-left: 10px;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+    padding-bottom: 50px;
+}
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+@media only screen and (min-width: 1300px) { 
+    .events .info-text h2{
+        margin-top: 40px;
+    }
+    .events .info-text p{
+        margin-top: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+/*Testimonials CSS*/
+.testimonials h1{
+    font-family: Geotica;
+    padding-top: 25px;
+    color: #e38612;
+}
+.testimonials .arrow:hover{
+    background-color: #e38612;
+}
+.testimonials .slider-wrapper{
+    position: relative;
+    padding: 55px 0;
+}
+.slider div p{
+    padding-bottom: 15px;
+    font-size: 1.1rem;
+    font-family: Roboto
+}
+.slider div img{
+    display: inline-block;
+    width: 25px;
+}
+.testimonials .arrow{
+    background-color: #666666;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+.testimonials .left{
+    top: 40%;
+}
+.testimonials .right{
+    top: 40%;
+    right: 0;
+}
+.testimonials .slider-wrapper .arrow img{
+    width: 30px;
+    height: 30px;
+    margin-top: 14px;
+}
+.testimonials .slider{
+    max-width: 60%;
+    margin: auto;
+}
+.slider h2{
+    font-family: Roboto;
+}
+@media only screen and (max-width: 576px){
+    .testimonials .slider {
+        max-width: 100%;
+        margin: auto;
+    }
+    .slider div p {
+        padding-bottom: 15px;
+        font-size: .8rem;
+        font-family: Roboto
+    }
+    .testimonials .arrow {
+        background-color: #666666;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+    .testimonials .slider-wrapper .arrow img{
+    width: 15px;
+    height: 15px;
+    margin-top: 0px;
+}
+    .testimonials .left {
+        left: -60px
+    }
+    .testimonials .right {
+        right: -60px
+    }
+    footer .logo-link{
+    max-width: 150px;
+    margin: auto;
+}
+}
+
+/*Footer CSS*/
+footer{
+    width: 100%;
+    background: url('../img/wall.png') center/cover;
+    padding: 60px 0;
+    color: white;
+}
+footer .footer-logo{
+    max-width: 150px;
+    margin-bottom: 30px;
+}
+footer h2, footer h3{
+    font-family: Geotica;
+    padding-bottom: 20px;
+}
+footer .address img, footer .phone img, footer .mail img{
+    width: 30px;
+    float: left;
+    margin-right: 10px;
+}
+footer .social{
+    width: 35px;
+    margin: 20px 20px 0 0;
+}
+footer .copyright img{
+    margin-right: 3px;
+    margin-bottom: 3px;
+    width: 15px;
+}
+footer .copyright{
+    font-family: Roboto;
+    font-size: .7rem;
+    margin-top: 20px;
+}
+footer .copyright a{
+    text-decoration: none;
+    color: white;
+}
+footer .services img{
+    width: 35px;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
